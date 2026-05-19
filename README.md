@@ -39,9 +39,12 @@ A Convolutional Neural Network (CNN) is used:
 - **Batch sizes & Epoch sizes correlation**
   To effective derive the experimental runs and results, a potential positive correlationship between the batch sizes and epoch sizes is observed and a combination of the factors is assigned to each-size data separately:
 Training data: 128 batch sizes and 150 epoch sizes & Parasect data: 256 batch sizes and 250 epoch sizes
+![Batch sizes & Epoch sizes correlation](Figure1.png)
+
 - **Batch sizes & Learning rate correlation**
     Under the same logic, the learning rate is preassigned with the findings that the results are optimized with higher learning rate for smaller dataset while the larger one needs slower rate, assign:
 Training data: 0.01 and Parasect data with 0.001
+![Batch sizes & Learning rate correlation](Figure2.png)
 
 ## Experiments
 Two experiments are conducted along with the changing on the optimizer and test/train split ratio
@@ -58,8 +61,11 @@ Two experiments are conducted along with the changing on the optimizer and test/
 - Generally, the CNN model provides stable classification and prediction performance as promised for both datasets while finding the correlationship of the batch sizes and epoch sizes along with the learning rates regarding to the different sizes.
 - The characteristics of different optimizers are also learned especially for the adams and RMSProp with their ability and speciality on capturing the changes(momentum) or maintaining the stability
 - Longer sequence input also improves the classification accuracy as they avoid certain level of promiscuity(multi-correspondance) and the gaps while the higher training ratio is dependent to provide a higher results at this stage.
-( **Average 60-70% of test accuracy with reasonable test loss around a test ratio of 0.2** )
+( **Average around 60% of test accuracy with reasonable test loss around a test ratio of 0.2** )
 - Overall, the model successfully captures local structural patterns in protein sequences.
+![Different Optimizer](Figure3.png)
+![Different Test/Train split ratio](Figure4.png)
+
 
 ## Future work
 - Incorporating larger and more diverse protein datasets, taking the multi-correspondance case into consideration, and increasing the test ratio while maintaing the high test accuracy with low loss
