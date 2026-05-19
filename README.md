@@ -49,6 +49,7 @@ Two experiments are conducted along with the changing on the optimizer and test/
 1.**Dataset 1 (Column 3 as input)**
 - Uses shorter sequence length (10)
 - Evaluates classification performance on fragment-level data
+
 2.**Dataset 2 (Column 2 as input)**
 - Uses longer sequence length (34)
 - Evaluates model performance on extended protein sequences
