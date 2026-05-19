@@ -39,12 +39,12 @@ A Convolutional Neural Network (CNN) is used:
 - **Batch sizes & Epoch sizes correlation**
   To effective derive the experimental runs and results, a potential positive correlationship between the batch sizes and epoch sizes is observed and a combination of the factors is assigned to each-size data separately:
 Training data: 128 batch sizes and 150 epoch sizes & Parasect data: 256 batch sizes and 250 epoch sizes
-![Batch sizes & Epoch sizes correlation](Figure1.png)
+![Batch sizes & Epoch sizes correlation](Figures/Figure1.png)
 
 - **Batch sizes & Learning rate correlation**
     Under the same logic, the learning rate is preassigned with the findings that the results are optimized with higher learning rate for smaller dataset while the larger one needs slower rate, assign:
 Training data: 0.01 and Parasect data with 0.001
-![Batch sizes & Learning rate correlation](Figure2.png)
+![Batch sizes & Learning rate correlation](Figures/Figure2.png)
 
 ## Experiments
 Two experiments are conducted along with the changing on the optimizer and test/train split ratio
@@ -63,8 +63,8 @@ Two experiments are conducted along with the changing on the optimizer and test/
 - Longer sequence input also improves the classification accuracy as they avoid certain level of promiscuity(multi-correspondance) and the gaps while the higher training ratio is dependent to provide a higher results at this stage.
 ( **Average around 60% of test accuracy with reasonable test loss around a test ratio of 0.2** )
 - Overall, the model successfully captures local structural patterns in protein sequences.
-![Different Optimizer](Figure3.png)
-![Different Test/Train split ratio](Figure4.png)
+![Different Optimizer](Figures/Figure3.png)
+![Different Test/Train split ratio](Figures/Figure4.png)
 
 
 ## Future work
