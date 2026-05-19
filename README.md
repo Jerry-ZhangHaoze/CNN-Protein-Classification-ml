@@ -45,6 +45,7 @@ Training data: 0.01 and Parasect data with 0.001
 
 ## Experiments
 Two experiments are conducted along with the changing on the optimizer and test/train split ratio
+
 1.**Dataset 1 (Column 3 as input)**
 - Uses shorter sequence length (10)
 - Evaluates classification performance on fragment-level data
