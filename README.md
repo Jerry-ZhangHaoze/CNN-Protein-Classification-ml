@@ -2,9 +2,14 @@
 Protein sequence classification with A domain specificity using Convolutional Neural Network (CNN) for genome mining
 ## Background 
 Protein classification plays a critical role in genome mining and bioinformatics.
-With time, many models are utilized to achieve a better or optimal results under the given conditions for the genome mining.This project applies convolutional Neural Networks (CNN), which is a mature model exceling at process the graphical information and the grid information, to classify protein sequences with a focus on A-domain protein fragments.
+With time, many models are utilized to achieve a better or optimal results under the given conditions for the genome mining.This project applies convolutional Neural Networks (CNN), which is a mature model excels at process the graphical information and the grid information, to classify protein sequences with a focus on A-domain protein fragments.
 
 The goal is to explore how deep learning models can capture sequence patterns to make more accurate prediction and improve classification performance for biological data with the different inner factors optimization at different level of sizes.
+
+## Project Structure
+- 'src/': CNN model implementation
+- 'data/': training and adapted protein datasets
+- 'Figures/': visualizations for model comparison and hyperparameter exploration
 
 ## Data Source
 This project uses two datasets:
@@ -34,7 +39,7 @@ A Convolutional Neural Network (CNN) is used:
 
 ### Training
 - Loss function: categorical cross-entropy
-- Optimizers: comparison among SGD, RMSprop, and Adams Family
+- Optimizers: comparison among SGD, RMSprop, and Adam-Family optimizers
 - Test/Train split ratio:Ratio of the data used to compare and learn and to test the results
 - **Batch sizes & Epoch sizes correlation**
   To effective derive the experimental runs and results, a potential positive correlationship between the batch sizes and epoch sizes is observed and a combination of the factors is assigned to each-size data separately:
